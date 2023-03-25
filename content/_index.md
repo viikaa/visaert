@@ -1,7 +1,7 @@
 ---
-title: "Hi There"
-blurb: "Welcome to your new Hugo site."
+title: "Visáért alapítvány"
+blurb: "Üdvözlünk a Visáért alapítvány honlapján"
 section:
-    heading: "A Subsection"
+    heading: "Hírek"
     text: "You can put even more content in here."
 ---
