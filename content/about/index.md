@@ -1,5 +1,4 @@
 ---
-title: "About"
+title: Az alapítványról
 ---
-
-Here's a bit about me.
+Az alapítvány blablabla
