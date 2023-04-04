@@ -1,14 +1,32 @@
 <header class="site-header">
   <nav class="site-nav">
-    <a class="logo" href="/">
-      {{ .Site.Title }}
-    </a>
-    <ul class="main-menu">
-      {{ range.Site.Menus.main }}
-      <li>
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      </li>
-      {{ end }}
-    </ul>
+    <div class="nav-mobile">
+      <div class="nav-container">
+        <a class="logo" href="/">
+          {{ .Site.Title }}
+        </a>
+        {{ $menuIcon := resources.Get "/reshot-icon-menu-D6U5PY3TJK.svg" }}
+        <a class="menu-icon" ><img src="{{ $menuIcon.RelPermalink }}" alt=""></a>
+      </div>
+      <ul class="main-menu mobile">
+        {{ range.Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="nav-desktop">
+      <a class="logo" href="/">
+        {{ .Site.Title }}
+      </a>
+      <ul class="main-menu">
+        {{ range.Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
   </nav>
 </header>

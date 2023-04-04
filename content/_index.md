@@ -1,7 +1,7 @@
 ---
 title: "Visáért alapítvány"
 blurb: "Üdvözlünk a Visáért alapítvány honlapján"
-section:
-    heading: "Hírek"
-    text: "You can put even more content in here."
+sections:
+    - { heading: "Hírek", text: "You can pllknlkn." }
+    - { heading: "Egyéb Hírek", text: "You can asdasd." }
 ---

@@ -1,11 +1,15 @@
 {{ partial "header.html" . }}
+<section class="full-page-section landing">
+	<div class="background-gradient">
+		<h1>{{ .Params.title }}</h1>
+		
+		<p>{{ .Params.blurb }}</p>
+	</div>
+</section>
 
-<h1>{{ .Params.title }}</h1>
-
-<p>{{ .Params.blurb }}</p>
-
-<h2>{{ .Params.section.heading }}</h2>
-
-<p>{{ .Params.section.text }}</p>
+{{ range .Params.sections }}
+	<h2>{{ .heading }}</h2>
+	<p>{{ .text }}</p>
+{{ end }}
 
 {{ partial "footer.html" . }}
