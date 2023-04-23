@@ -6,7 +6,7 @@
           {{ .Site.Title }}
         </a>
         <div id="mobile-menu-button-container">
-          <button class="call-to-action">Adományozás</button>
+          <a class="call-to-action" href="/donate">Adományozás</a>
           {{ $menuIcon := resources.Get "/reshot-icon-menu-D6U5PY3TJK.svg" }}
           <a class="menu-icon" ><img src="{{ $menuIcon.RelPermalink }}" alt=""></a>
         </div>
@@ -30,7 +30,7 @@
         </li>
         {{ end }}
         <li>
-          <button class="call-to-action">Adományozás</button>
+          <a class="call-to-action" href="/donate">Adományozás</a>
         </li>
       </ul>
     </div>

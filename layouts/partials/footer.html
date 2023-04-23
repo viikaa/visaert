@@ -48,10 +48,8 @@
   let elementsToShow = document.querySelectorAll('.show-on-scroll');
 
   function loop() {
-    console.log('loop');
     elementsToShow.forEach((element) => {
       if (isElementInViewport(element)) {
-        console.log('element in viewPort: ', element)
         element.classList.add('is-visible');
       }
       else {

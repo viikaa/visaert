@@ -1,8 +1,10 @@
 .show-on-scroll {
 	opacity: 0;
-	transition: opacity .5s .25s ease-out;
+	transform: rotate(10deg);
+	transition: opacity .5s .25s ease-out, transform .2s .25s ease-out;
 }
 
 .is-visible {
 	opacity: 1;
+	transform: rotate(0deg);
 }
