@@ -27,7 +27,7 @@ collections:
           - { label: "Blurb", name: "blurb", widget: "text" }
           - {
               label: "Section",
-              name: "section",
+              name: "sections",
               widget: "object",
               fields:
                 [
