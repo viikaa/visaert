@@ -9,11 +9,11 @@ footer {
 	
 	#footer-content {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
+		flex-direction: row;
 		align-items: center;
 		margin-bottom: 1rem;
-
+		
 		& img {
 			width: var(--logo-width);
 			border-radius: calc(var(--logo-width) / 2);

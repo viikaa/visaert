@@ -7,6 +7,18 @@
 	</div>
 </section>
 
+<section id="intro">
+	<div id="intro-border">
+		<h1>Bemutatkozás</h1>
+		<div id="intro-content">
+			<p>Lórum ipse mint szívábrin klok hajlan, míg olásnak és dzsebnek semmi rozára kanyad. A bulás matlan tinceseket héroz az enemeknek, amikor éppen göntesen lobolnak. Minden olyan szegelye, amely egy másik gyalmasásban kapajgásban lovábbít, a pulya satos ramójának van kitéve. Vesztés gyáron hurázat gúnyos menta szerint a gúnyos körcében szernyős lelők inéke csábályos csonyosításokat keleszt majd. Hurázat erről a fogártás függő mozott spinatban sörtekvő csapor rőlésében szezett, amelyben részletesen gyönyözött a nyuras körce röngés vezléseinek</p>
+			{{ $intro := resources.Get "/visaert_intro.jpg" }}
+			{{ $logo := resources.Get "./visaert_logo_scaled_2.png" }}
+			{{/*  <img src="{{ $intro.RelPermalink }}" alt="">  */}}
+		</div>
+	</div>
+</section>
+
 {{ range .Params.sections }}
 	<h2>{{ .heading }}</h2>
 	<p>{{ .text }}</p>
