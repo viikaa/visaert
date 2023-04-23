@@ -2,13 +2,13 @@ title = "Visáért alapítvány"
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts"
+    identifier = "about"
+    name = "Rólunk"
+    url = "/about"
     weight = 10
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
+    identifier = "posts"
+    name = "Beszámolók"
+    url = "/posts"
     weight = 20

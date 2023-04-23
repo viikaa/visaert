@@ -1,7 +1,23 @@
 </main>
 	
 <footer>
-	<p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+  <div id="footer-content">
+	  {{ $logo := resources.Get "./visaert_logo_scaled_2.png" }}
+    <img src="{{ $logo.RelPermalink }}" alt="">
+    <div class="footer-section">
+      <p class="section-title">Kapcsolat</p>
+      <p>Visáért Alapítvány</p>
+      <p>2083 Solymár, Jókai Mór utca 16.</p>
+    </div>
+    <div class="footer-section">
+      <p class="section-title">Bankszámláink</p>
+      <p><span class="currency">HUF</span>10300002-13338749-00024905</p>
+      <p><span class="currency">EUR</span>10300002-13338749-00014889</p>
+      <p><span class="currency">EUR</span>IBAN: HU98 10300002-13338749-00014889</p>
+      <p><span id="swift-code">Swift kód:</span> MKKB HU HB</p>
+    </div>
+  </div>
+	<p id="copyright">&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
 </footer>
 
 <script>

@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #d1d1d1;
+  background: #2f2f2f;
+  font-size: 125%;
+  line-height: 1.5;
+  margin: 0;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+
+  .content {
+    margin-bottom: 2rem;
+    // padding: 1rem;
+    // max-width: 45rem;
+    // padding: 0 auto;
+
+    .full-page-section {
+      width: 100vw;
+      height: 100vh;
+
+      .background-gradient {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba($color: black, $alpha: .3);
+      }
+
+      &.landing {
+        background-image: url('../visaert_landing_image.jpg');
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.call-to-action {
+  background: #a91219;
+  color: white;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 48px;
+  padding: .5rem;
+  cursor: pointer;
+  font-family: 'Source Sans Pro';
+  font-weight: 500;
+
+  &:hover {
+    background: #EE1C26;
+  }
+}

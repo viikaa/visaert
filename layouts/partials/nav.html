@@ -5,13 +5,16 @@
         <a class="logo" href="/">
           {{ .Site.Title }}
         </a>
-        {{ $menuIcon := resources.Get "/reshot-icon-menu-D6U5PY3TJK.svg" }}
-        <a class="menu-icon" ><img src="{{ $menuIcon.RelPermalink }}" alt=""></a>
+        <div id="mobile-menu-button-container">
+          <button class="call-to-action">Adományozás</button>
+          {{ $menuIcon := resources.Get "/reshot-icon-menu-D6U5PY3TJK.svg" }}
+          <a class="menu-icon" ><img src="{{ $menuIcon.RelPermalink }}" alt=""></a>
+        </div>
       </div>
       <ul class="main-menu mobile">
         {{ range.Site.Menus.main }}
         <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
+          <a class="menu-item" href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ end }}
       </ul>
@@ -23,9 +26,12 @@
       <ul class="main-menu">
         {{ range.Site.Menus.main }}
         <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
+          <a class="menu-item" href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ end }}
+        <li>
+          <button class="call-to-action">Adományozás</button>
+        </li>
       </ul>
     </div>
   </nav>
