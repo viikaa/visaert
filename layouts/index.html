@@ -13,7 +13,7 @@
 		<div id="intro-content">
 			<p class="section-text">{{ (index .Params.sections 0).text}} </p>
 			{{ $intro := resources.Get "/visaert_intro.jpg" }}
-			<img src="{{ $intro.RelPermalink }}" alt="">
+			<img class="show-on-scroll" src="{{ $intro.RelPermalink }}" alt="">
 		</div>
 	</div>
 </section>
@@ -21,7 +21,7 @@
 <section id="visa" class="full-page-section">
 	<h1>{{ (index .Params.sections 1).heading }}</h1>
 	{{ $visa := resources.Get "/visa-trombita.jpeg" }}
-	<img src="{{ $visa.RelPermalink }}">
+	<img class="show-on-scroll" src="{{ $visa.RelPermalink }}">
 	<p class="section-text">{{ (index .Params.sections 1).text}} </p>
 </section>
 
