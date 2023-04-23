@@ -50,7 +50,7 @@ footer {
 }
 
 @media screen and (max-width: 48rem) {
-	#footer-content {
+	footer #footer-content {
 		flex-direction: column;
 		gap: 2rem;
 
