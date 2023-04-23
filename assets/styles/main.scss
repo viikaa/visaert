@@ -28,26 +28,37 @@ body {
       width: 100vw;
       min-height: 100vh;
 
-      &.landing {
-        background-image: url('../visaert_landing_image.jpg');
-        background-size: cover;
+      & .section-text {
+        font-size: 1.3rem;
       }
     }
+    
+    #landing {
+      background-image: url('../visaert_landing_image.jpg');
+      background-size: cover;
 
-    .background-gradient {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: rgba($color: black, $alpha: .4);
-      font-size: 2rem;
+      #background-gradient {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba($color: black, $alpha: .4);
+        font-size: 2rem;
+   
+        & p {
+          margin-bottom: 10rem;
+          text-align: center;
+        }
 
-      & p {
-        margin-bottom: 10rem;
+        & h1 {
+          text-align: center;
+        }
       }
+
     }
+    
 
     #intro {
       background: var(--intro-section-background);
@@ -56,10 +67,11 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 10vh;
       
       & #intro-border {
         padding: 3rem;
-        width: calc(100vw - 15vh);
+        // width: calc(100vw - 15vh);
         border: .2rem white solid;
       }
 
@@ -117,6 +129,10 @@ body {
 }
 
 @media screen and (max-width: 48rem) {
+
+  .full-page-section .section-text {
+    font-size: 1rem;
+  }
 
   body .content #intro #intro-content {
     flex-direction: column;
