@@ -35,6 +35,7 @@ body {
     .full-page-section {
       width: 100vw;
       min-height: 100vh;
+      position
 
       &.first {
         min-height: calc(100vh - 62px);
@@ -43,29 +44,33 @@ body {
 
       & .section-text {
         font-size: 1.3rem;
+        text-align: justify;
       }
     }
     
     #landing {
       background-image: url('../visaert_landing_image.jpg');
       background-size: cover;
+      background-position-x: 69%;
 
-      #background-gradient {
+      #landing-background {
         width: 100vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgba($color: black, $alpha: .4);
         font-size: 2rem;
    
         & p {
+          font-family: 'Poltawsky Nowy';
           margin-bottom: 10rem;
           text-align: center;
         }
 
         & h1 {
+          font-family: 'Poltawsky Nowy';
+          font-size: 5rem;
           text-align: center;
         }
       }
@@ -89,7 +94,8 @@ body {
       }
 
       h1 {
-        font-size: 3rem;
+        font-family: 'Poltawsky Nowy';
+        font-size: 2.5rem;
         font-weight: 400;
       }
 
@@ -97,7 +103,6 @@ body {
         display: flex;
         flex-direction: row;
         gap: 2rem;
-        text-align: justify;
         align-items: center;
 
         & img {
@@ -115,15 +120,20 @@ body {
       padding-right: 10vw;
 
       h1 {
+        font-family: 'Poltawsky Nowy';
         width: 100%;
         text-align: center;
         font-size: 3rem;
         font-weight: 400;
+        margin-bottom: 3rem;
       }
-
-      img {
+      
+      & img {
+        // transform: rotate(7deg);
+        // filter: brightness(.5);
         max-width: 100%;
       }
+
     }
   }
 }

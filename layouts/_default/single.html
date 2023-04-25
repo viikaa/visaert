@@ -7,19 +7,23 @@
 	{{ range $idx, $section := .Params.sections }}
 
 	<div class="single-section">
-
 		<h2 class="single-section-title">{{.title}}</h2>
 		<div class="single-section-content">
 			{{ if (index $params.image $idx) }}
 				<img class="show-on-scroll" src="{{ (index $params.image $idx) }}" >
 			{{ end }}
 			
-			<div class="single-section-text">
+			{{/*  <div class="single-section-text">
 				{{ .text }}
+			</div>  */}}
+			<div class="single-section-text">
+				{{ range $paragraph := .paragraphs }}
+					<p>{{ $paragraph }}</p>
+				{{ end }}
 			</div>
 		</div>
 	</div>
-
+	<div class="border"></div>
 	{{ end }}
 
 
