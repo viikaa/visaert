@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "static/images" # Folder where user uploaded files should go
+media_folder: "assets/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/post
@@ -20,13 +20,13 @@ collections:
     label: "Oldalak"
     files:
       - file: "content/_index.md"
-        label: "Home Page"
+        label: "Főoldal"
         name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Blurb", name: "blurb", widget: "text" }
+          - { label: "Főcím", name: "title", widget: "string" }
+          - { label: "Alcím", name: "blurb", widget: "string" }
           - {
-              label: "Section",
+              label: "Szekciók",
               name: "sections",
               widget: "object",
               fields:
