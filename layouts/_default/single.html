@@ -13,9 +13,7 @@
 				<img class="show-on-scroll" src="{{ (index $params.image $idx) }}" >
 			{{ end }}
 			
-			{{/*  <div class="single-section-text">
-				{{ .text }}
-			</div>  */}}
+
 			<div class="single-section-text">
 				{{ range $paragraph := .paragraphs }}
 					<p>{{ $paragraph }}</p>
