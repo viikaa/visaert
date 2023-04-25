@@ -12,7 +12,7 @@
 		<h1>{{ (index .Params.sections 0).heading }}</h1>
 		<div id="intro-content">
 			<p class="section-text">{{ (index .Params.sections 0).text}} </p>
-			{{ $intro := resources.Get "/visaert_intro.jpg" }}
+			{{ $intro := resources.Get "/images/visaert_intro.jpg" }}
 			<img class="show-on-scroll" src="{{ $intro.RelPermalink }}" alt="">
 		</div>
 	</div>
@@ -21,7 +21,7 @@
 <section id="visa" class="full-page-section">
 	<h1>{{ (index .Params.sections 1).heading }}</h1>
 	<p class="section-text">{{ (index .Params.sections 1).text}} </p>
-	{{ $visa := resources.Get "/visa-trombita.jpeg" }}
+	{{ $visa := resources.Get "/images/visa-trombita.jpeg" }}
 	<img class="show-on-scroll" src="{{ $visa.RelPermalink }}">
 
 </section>

@@ -16,6 +16,13 @@
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
 
+	{{ $netlify_script := resources.Get "./scripts/netlify_admin.js" }}
+	{{ $menu_script := resources.Get "./scripts/menu.js" }}
+	{{ $scroll_script := resources.Get "./scripts/scroll.js" }}
+	<script src="{{ $netlify_script.RelPermalink }}" defer></script>
+	<script src="{{ $menu_script.RelPermalink }}" defer></script>
+	<script src="{{ $scroll_script.RelPermalink }}" defer></script>
+
 </head>
 
 <body>
