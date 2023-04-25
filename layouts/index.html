@@ -20,10 +20,10 @@
 
 <section id="visa" class="full-page-section">
 	<h1>{{ (index .Params.sections 1).heading }}</h1>
+	<p class="section-text">{{ (index .Params.sections 1).text}} </p>
 	{{ $visa := resources.Get "/visa-trombita.jpeg" }}
 	<img class="show-on-scroll" src="{{ $visa.RelPermalink }}">
 
-	<p class="section-text">{{ (index .Params.sections 1).text}} </p>
 </section>
 
 {{ partial "footer.html" . }}
