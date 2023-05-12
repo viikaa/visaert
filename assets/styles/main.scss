@@ -2,10 +2,10 @@
   --visa-red: #EE1C26;
   --visa-green: #319444;
   --visa-dark-gray: #151515;
-  // --intro-section-background: rgb(76, 0, 0);
-  // --visa-section-background: rgb(0, 37, 0);
-  --intro-section-background: rgb(0, 37, 0);
-  --visa-section-background: rgb(76, 0, 0);
+  --intro-section-background: rgb(76, 0, 0);
+  --activity-section-background: rgb(0, 37, 0);
+  // --intro-section-background: rgb(0, 37, 0);
+  // --activity-section-background: rgb(76, 0, 0);
 }
 
 * {
@@ -35,7 +35,6 @@ body {
     .full-page-section {
       width: 100vw;
       min-height: 100vh;
-      position
 
       &.first {
         min-height: calc(100vh - 62px);
@@ -49,10 +48,12 @@ body {
     }
     
     #landing {
-      background-image: url('../visaert_landing_image.jpg');
+      background-image: url('../visaert_trombita.jpg');
       background-size: cover;
-      background-position-x: 69%;
-
+      background-position-x: 30%;
+      background-position-y: 80%;
+      color: white;
+      
       #landing-background {
         width: 100vw;
         height: 100vh;
@@ -61,10 +62,15 @@ body {
         justify-content: center;
         align-items: center;
         font-size: 2rem;
+        background: rgba($color: black, $alpha: .35);
+
+        #logo {
+          width: 30vh;
+          height: 30vh;
+        }
    
         & p {
           font-family: 'Poltawsky Nowy';
-          margin-bottom: 10rem;
           text-align: center;
         }
 
@@ -111,9 +117,10 @@ body {
       }
     }
 
-    #visa {
-      background: var(--visa-section-background);
-      color: white;
+    #activity {
+      // background: var(--activity-section-background);
+      background: #d1d1d1;
+      color: black;
       padding-top: 10vh;
       padding-bottom: 10vh;
       padding-left: 10vw;
@@ -123,21 +130,55 @@ body {
         font-family: 'Poltawsky Nowy';
         width: 100%;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 400;
         margin-bottom: 3rem;
       }
 
-      & p {
-        margin-bottom: 2rem;
+      & #about-village-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2rem;
+        align-items: center;
+
+        & img {
+          width: 40vw;
+          object-fit: contain;
+        }
       }
-      
-      & img {
-        // transform: rotate(7deg);
-        // filter: brightness(.5);
-        max-width: 100%;
+    }
+
+    #members {
+      background: var(--activity-section-background);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+      padding-left: 10vw;
+      padding-right: 10vw;
+
+
+      h1 {
+        font-family: 'Poltawsky Nowy';
+        font-size: 2.5rem;
+        font-weight: 400;
       }
 
+      & .member-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+
+        & img {
+          width: 40vw;
+          object-fit: cover;
+          align-self: normal;
+        }
+      }
     }
   }
 }

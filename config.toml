@@ -2,9 +2,9 @@ title = "Visáért alapítvány"
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "Rólunk"
-    url = "/about"
+    identifier = "village"
+    name = "A faluról"
+    url = "/village"
     weight = 10
 
   [[menu.main]]

@@ -2,8 +2,9 @@
 <section id="landing" class="full-page-section first">
 	<div id="landing-background" class="background-gradient">
 		<h1>{{ .Params.title }}</h1>
-		
 		<p>{{ .Params.blurb }}</p>
+	  {{ $logo := resources.Get "./images/visaert_logo_scaled_2.png" }}
+    <img id="logo" src="{{ $logo.RelPermalink }}" alt="">
 	</div>
 </section>
 
@@ -11,19 +12,42 @@
 	<div id="intro-border">
 		<h1>{{ (index .Params.sections 0).heading }}</h1>
 		<div id="intro-content">
-			<p class="section-text">{{ (index .Params.sections 0).text}} </p>
 			{{ $intro := resources.Get "/images/visaert_intro.jpg" }}
 			<img class="show-on-scroll" src="{{ $intro.RelPermalink }}" alt="">
+			<p class="section-text">{{ (index .Params.sections 0).text}} </p>
 		</div>
 	</div>
 </section>
 
-<section id="visa" class="full-page-section">
+<section id="activity" class="full-page-section">
 	<h1>{{ (index .Params.sections 1).heading }}</h1>
-	<p class="section-text">{{ (index .Params.sections 1).text}} </p>
-	{{ $visa := resources.Get "/images/visa-trombita.jpeg" }}
-	<img class="show-on-scroll" src="{{ $visa.RelPermalink }}">
+	<div id="about-village-container">
+		<p class="section-text">{{ (index .Params.sections 1).text}} </p>
+	  {{ $activity := resources.Get "./images/visaert_activity.jpg" }}
+    <img class="show-on-scroll" src="{{ $activity.RelPermalink }}" alt="">
+	</div>
+</section>
+
+
+<section id="members" class="full-page-section">
+	<div>
+		<h1>{{ (index .Params.sections 2).heading }}</h1>
+		<div class="member-container">
+			{{ $zsura := resources.Get "./images/zsura.jpeg" }}
+			<img class="show-on-scroll" src="{{ $zsura.RelPermalink }}" alt="">
+			<p class="section-text">{{ (index .Params.sections 2).text}} </p>
+		</div>
+	</div>
+	<div>
+		<h1>{{ (index .Params.sections 3).heading }}</h1>
+		<div class="member-container">
+			{{ $szapi := resources.Get "./images/szapi.jpg" }}
+			<img class="show-on-scroll" src="{{ $szapi.RelPermalink }}" alt="">
+			<p class="section-text">{{ (index .Params.sections 3).text}} </p>
+		</div>
+	</div>
 
 </section>
+
 
 {{ partial "footer.html" . }}

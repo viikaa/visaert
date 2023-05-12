@@ -7,7 +7,9 @@
 	{{ range $idx, $section := .Params.sections }}
 
 	<div class="single-section">
-		<h2 class="single-section-title">{{.title}}</h2>
+		{{ if (index $section.title) }}
+			<h2 class="single-section-title">{{$section.title}}</h2>
+		{{ end }}		
 		<div class="single-section-content">
 			{{ if (index $params.image $idx) }}
 				<img class="show-on-scroll" src="{{ (index $params.image $idx) }}" >
