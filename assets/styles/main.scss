@@ -216,4 +216,33 @@ body {
       width: 100%;
     }
   }
+
+  body .content #activity {
+    & h1 {
+      font-size: 2rem;
+    }
+    & #about-village-container {
+      flex-direction: column;
+  
+  
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  body .content #members {
+    h1 {
+      text-align: center;
+    }
+  
+    & .member-container {
+      flex-direction: column;
+
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
 }

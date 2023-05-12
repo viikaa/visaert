@@ -1,19 +1,30 @@
 {{ partial "header.html" . }}
+{{ $posts := (.Data.Pages) }}
+{{ $postsLength := len $posts }}
+
 <div id="list-container">
-	
-	<h1>{{ .Title }}</h1>
-	
-	{{ .Content }}
-	
-	{{ range.Data.Pages }}
-	<article class="post-snippet">
-		<h3>
-			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-		</h3>
-		<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-			{{ .Date.Format "January 2, 2006" }}
-		</time>
-	</article>
+
+	{{ if (gt $postsLength 0) }}
+
+		<h1>{{ .Title }}</h1>
+			
+		{{ .Content }}
+
+		{{ range.Data.Pages }}
+		<article class="post-snippet">
+			<h3>
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</h3>
+			<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+				{{ .Date.Format "January 2, 2006" }}
+			</time>
+		</article>
+		{{ end }}
+
+	{{ else }}
+
+		<h1>Még nincsenek beszámolók</h1>
+
 	{{ end }}
 
 </div>
