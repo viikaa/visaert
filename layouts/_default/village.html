@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+
+<div id="village-content">
+	<h1 class="title page-title">{{ .Title }}</h1>
+
+	{{ $params := .Params }}
+	{{ range $idx, $section := .Params.sections }}
+		<div class="section">
+			{{ if (index $section.title) }}
+			<h2 class="title">{{$section.title}}</h2>
+			{{ end }}		
+
+			<div class="section-content">
+				{{ range $paragraph := .paragraphs }}
+					<p>{{ $paragraph }}</p>
+				{{ end }}
+			</div>
+		</div>
+	{{ end }}
+
+
+</div>
+{{ partial "footer.html" . }}
