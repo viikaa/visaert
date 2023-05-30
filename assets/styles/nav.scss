@@ -16,18 +16,25 @@
       display: inline-block;
 			position: relative;
       margin: 1rem;
+      border-radius: .5rem;
       text-decoration: none;
       color: #d1d1d1;
       transition: color, .25s;
 
-			&.menu-item::after {
+      &.menu-item, &.logo {
+        border: 2px #EE1C26 solid;
+        padding: .2rem;
+        margin: .8rem;
+      }
+
+			&.menu-item::after, &.logo::after {
 				content: '';
 				position: absolute;
-				width: 100%;
+				width: 80%;
 				transform: scaleX(0);
 				height: 2px;
-				bottom: 0;
-				left: 0;
+				bottom: .2rem;
+				left: 10%;
 				background-color: var(--visa-green);
 				transform-origin: bottom left;
 				transition: transform 0.25s ease-out;
@@ -51,6 +58,11 @@
       
       &:hover {
         color: white;
+
+        &::after {
+					transform: scaleX(1);
+					transform-origin: bottom left;
+				}
       }
     }
 
@@ -157,6 +169,7 @@
 
 					& .menu-item {
 						width: 100%;
+            border: none;
 
             &::after, &::before {
               transition: none;

@@ -4,8 +4,7 @@
   --visa-dark-gray: #151515;
   --intro-section-background: rgb(76, 0, 0);
   --activity-section-background: rgb(0, 37, 0);
-  // --intro-section-background: rgb(0, 37, 0);
-  // --activity-section-background: rgb(76, 0, 0);
+  --welcome-section-background: black;
 }
 
 * {
@@ -46,6 +45,24 @@ body {
         text-align: justify;
       }
     }
+
+    #welcome {
+      background: var(--welcome-section-background);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & #logo-big {
+        height: 50vh;
+        object-fit: contain;
+      }
+
+      & p {
+        font-family: 'Poltawsky Nowy';
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
     
     #landing {
       background-image: url('../visaert_trombita.jpg');
@@ -62,12 +79,6 @@ body {
         justify-content: center;
         align-items: center;
         font-size: 2rem;
-        background: rgba($color: black, $alpha: .35);
-
-        #logo {
-          width: 30vh;
-          height: 30vh;
-        }
    
         & p {
           font-family: 'Poltawsky Nowy';
@@ -95,7 +106,6 @@ body {
       
       & #intro-border {
         padding: 3rem;
-        // width: calc(100vw - 15vh);
         border: .2rem white solid;
       }
 
@@ -118,7 +128,6 @@ body {
     }
 
     #activity {
-      // background: var(--activity-section-background);
       background: #d1d1d1;
       color: black;
       padding-top: 10vh;
