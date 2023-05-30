@@ -1,4 +1,5 @@
 title = "Visáért Alapítvány"
+theme = ["hugo-shortcode-gallery"]
 
 [menu]
   [[menu.main]]
@@ -8,7 +9,13 @@ title = "Visáért Alapítvány"
     weight = 10
 
   [[menu.main]]
+    identifier = "gallery"
+    name = "Galéria"
+    url = "/gallery"
+    weight = 20
+
+  [[menu.main]]
     identifier = "posts"
     name = "Beszámolók"
     url = "/posts"
-    weight = 20
+    weight = 30
