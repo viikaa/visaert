@@ -1,0 +1,4 @@
+---
+title: Kapcsolat
+layout: contact
+---

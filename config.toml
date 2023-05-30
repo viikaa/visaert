@@ -19,3 +19,9 @@ theme = ["hugo-shortcode-gallery"]
     name = "Beszámolók"
     url = "/posts"
     weight = 30
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Kapcsolat"
+    url = "/contact"
+    weight = 40

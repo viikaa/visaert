@@ -7,7 +7,7 @@
 
   .site-nav {
     display: flex;
-    max-width: 45rem;
+    max-width: 50rem;
     margin: 0 auto;
     justify-content: space-between;
 		align-items: center;
@@ -104,7 +104,7 @@
   }
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 50rem) {
   .site-nav,
   .main-menu {
     flex-direction: column;
