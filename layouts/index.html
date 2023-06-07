@@ -32,7 +32,7 @@
 
 
 <section id="members" class="full-page-section">
-	<div>
+	<div id="grounder">
 		<h1>{{ (index .Params.sections 2).heading }}</h1>
 		<div class="member-container">
 			{{ $zsura := resources.Get "./images/zsura.jpeg" }}
@@ -40,7 +40,7 @@
 			<p class="section-text">{{ (index .Params.sections 2).text}} </p>
 		</div>
 	</div>
-	<div>
+	<div id="curator">
 		<h1>{{ (index .Params.sections 3).heading }}</h1>
 		<div class="member-container">
 			{{ $szapi := resources.Get "./images/szapi.jpg" }}

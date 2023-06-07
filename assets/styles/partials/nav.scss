@@ -7,7 +7,7 @@
 
   .site-nav {
     display: flex;
-    max-width: 50rem;
+    // max-width: 50rem;
     margin: 0 auto;
     justify-content: space-between;
 		align-items: center;
@@ -104,7 +104,7 @@
   }
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 1300px) {
   .site-nav,
   .main-menu {
     flex-direction: column;
@@ -161,7 +161,7 @@
           display: block;
           width: 100%;
 					background: rgba($color: black, $alpha: .8);
-          transform: translateY(-372px);
+          transform: translateY(-570px);
           display: hidden;
           transition-timing-function: cubic-bezier();
           transition-duration: .5s;

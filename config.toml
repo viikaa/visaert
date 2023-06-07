@@ -25,3 +25,23 @@ theme = ["hugo-shortcode-gallery"]
     name = "Kapcsolat"
     url = "/contact"
     weight = 40
+
+  [[menu.main]]
+    name = "Bemutatkozás"
+    url = "/#intro"
+    weight = 50
+  
+  [[menu.main]]
+    name = "Tevékenységünk"
+    url = "/#activity"
+    weight = 60
+  
+  [[menu.main]]
+    name = "Alapító"
+    url = "/#grounder"
+    weight = 70
+  
+  [[menu.main]]
+    name = "Kurátor"
+    url = "/#curator"
+    weight = 70

@@ -7,3 +7,12 @@ menuIcon.addEventListener('click', () => {
 		mobileMenu.classList.remove('present');
 	}
 });
+
+const menuItems = document.querySelectorAll('.menu-item');
+menuItems.forEach(menuItem => {
+	menuItem.addEventListener('click', () => {
+		if (mobileMenu.classList.contains('present')) {
+			mobileMenu.classList.remove('present');
+		}
+	})
+});

@@ -9,3 +9,7 @@
 @import 'pages/single.scss';
 @import 'pages/village.scss';
 @import 'pages/donate.scss';
+
+html {
+	scroll-behavior: smooth;
+}
