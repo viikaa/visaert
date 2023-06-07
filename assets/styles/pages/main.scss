@@ -42,7 +42,7 @@ body {
 
       & .section-text {
         font-size: 1.3rem;
-        text-align: justify;
+        text-align: left;
       }
     }
 
@@ -51,16 +51,20 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      & #logo-big {
-        height: 50vh;
-        object-fit: contain;
-      }
+      padding-left: 20vw;
+      padding-right: 20vw;
 
       & p {
         font-family: 'Poltawsky Nowy';
         text-align: center;
         font-size: 2rem;
+        align-self: flex-start;
+      }
+
+      & #logo-big {
+        height: 80vh;
+        object-fit: contain;
+        align-self: flex-end;
       }
     }
     
@@ -216,6 +220,19 @@ body {
 
   .full-page-section .section-text {
     font-size: 1rem;
+  }
+
+  body .content #welcome {
+    padding: 0;
+
+    & p {
+      align-self: normal;
+    }
+
+    & #logo-big {
+      align-self: normal;
+      height: 100vw;
+    }
   }
 
   body .content #intro #intro-content {

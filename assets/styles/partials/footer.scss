@@ -43,9 +43,17 @@ footer {
 		}
 	}
 
-	#copyright {
+	.copyright {
 		width: 100%;
 		text-align: center;
+	}
+
+	#copyright-v2 {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: .5rem .5rem;
 	}
 }
 
