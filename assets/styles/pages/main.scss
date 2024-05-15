@@ -160,6 +160,10 @@ body {
           object-fit: contain;
         }
       }
+
+      & .section-text {
+        font-size: 1.2rem;
+      }
     }
 
     #members {

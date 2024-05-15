@@ -10,13 +10,13 @@
 			
 		{{ .Content }}
 
-		<div id="container">
-			{{ range.Data.Pages }}
-			<a class="menu-item media-type" href="{{ .RelPermalink }}">
-				<h2>{{ .Title }}</h1>
-			</a>
-			{{ end }}
-		</div>
+		<h2>Albumok</h2>
+		{{ range.Data.Pages }}
+			<h3 class="folder">
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</h3>
+		{{ end }}
+
 	{{ else }}
 
 		<h1>Még nincsenek beszámolók</h1>

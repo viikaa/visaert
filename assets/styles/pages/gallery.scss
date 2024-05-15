@@ -1,0 +1,38 @@
+#container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 32px;
+	flex-wrap: wrap;
+	// border: 1px cyan solid;
+
+	& .menu-item {
+		border: 2px #EE1C26 solid;
+		border-radius: .5rem;
+		padding: 2rem;
+		margin: .8rem;
+		position: relative;
+	}
+
+	& .menu-item::after {
+		content: '';
+		position: absolute;
+		width: 80%;
+		transform: scaleX(0);
+		height: .5rem;
+		bottom: 1rem;
+		left: 10%;
+		background-color: var(--visa-green);
+		transform-origin: bottom left;
+		transition: transform 0.25s ease-out;
+	}
+
+	& .menu-item:hover {
+		color: #ffffff;
+
+		&.menu-item::after {
+			transform: scaleX(1);
+			transform-origin: bottom left;
+		}
+	}
+}
