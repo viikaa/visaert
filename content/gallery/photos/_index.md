@@ -1,4 +1,4 @@
 ---
 layout: photo-folders
-title: Galéria
+title: Fotók
 ---
