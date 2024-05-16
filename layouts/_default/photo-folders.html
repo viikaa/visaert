@@ -6,7 +6,10 @@
 
 	{{ if (gt $postsLength 0) }}
 
-		<h1 class="page-title">{{ .Title }}</h1>
+		<div id="header">
+			<a href="/gallery">< Vissza</a>
+			<h1 class="page-title">{{ .Title }}</h1>
+		</div>
 			
 		{{ .Content }}
 

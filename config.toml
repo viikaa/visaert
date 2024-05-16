@@ -3,45 +3,45 @@ theme = ["hugo-shortcode-gallery"]
 
 [menu]
   [[menu.main]]
+    name = "Bemutatkozás"
+    url = "/#intro"
+    weight = 10
+  
+  [[menu.main]]
+    name = "Tevékenységünk"
+    url = "/#activity"
+    weight = 20
+  
+  [[menu.main]]
+    name = "Alapító"
+    url = "/#grounder"
+    weight = 30
+  
+  [[menu.main]]
+    name = "Kurátor"
+    url = "/#curator"
+    weight = 40
+
+  [[menu.main]]
     identifier = "village"
     name = "A faluról"
     url = "/village"
-    weight = 10
+    weight = 50
 
   [[menu.main]]
     identifier = "gallery"
     name = "Galéria"
     url = "/gallery"
-    weight = 20
+    weight = 60
 
   [[menu.main]]
     identifier = "posts"
     name = "Beszámolók"
     url = "/posts"
-    weight = 30
+    weight = 70
 
   [[menu.main]]
     identifier = "contact"
     name = "Kapcsolat"
     url = "/contact"
-    weight = 40
-
-  [[menu.main]]
-    name = "Bemutatkozás"
-    url = "/#intro"
-    weight = 50
-  
-  [[menu.main]]
-    name = "Tevékenységünk"
-    url = "/#activity"
-    weight = 60
-  
-  [[menu.main]]
-    name = "Alapító"
-    url = "/#grounder"
-    weight = 70
-  
-  [[menu.main]]
-    name = "Kurátor"
-    url = "/#curator"
-    weight = 70
+    weight = 80

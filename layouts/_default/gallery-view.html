@@ -1,7 +1,10 @@
 {{ partial "header.html" . }}
 
 <div id="page-content">
-	<h1 class="page-title">{{ .Title }}</h1>
+	<div id="header">
+		<a href="/gallery/photos">< Vissza</a>
+		<h1 class="page-title">{{ .Title }}</h1>
+	</div>
 	{{ .Content }}
 </div>
 
