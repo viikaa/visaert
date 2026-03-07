@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+
+<div id="page-content">
+	<h1 class="page-title">{{ .Title }}</h1>
+
+	{{ $params := .Params }}
+	{{ range $idx, $section := .Params.sections }}
+		<div class="section">
+			{{ if (index $section.title) }}
+			<h2 class="section-title">{{$section.title}}</h2>
+			{{ end }}		
+
+			<div class="section-content">
+				{{ range $paragraph := .paragraphs }}
+					<p>{{ $paragraph }}</p>
+				{{ end }}
+			</div>
+		</div>
+	{{ end }}
+	<div>
+		<h3>Az idei tábor időpontja: 2026. július 13-19.</h3>
+		<h3>Jelentkezés <a href="https://visaitabor.hu/#jelentkezes" target="_blank">ITT</a></h3>
+	</div>
+</div>
+{{ partial "footer.html" . }}

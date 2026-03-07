@@ -51,20 +51,41 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-left: 20vw;
-      padding-right: 20vw;
-
-      & p {
+      
+      p {
         font-family: 'Poltawsky Nowy';
         text-align: center;
         font-size: 2rem;
-        align-self: flex-start;
+        align-self: flex-center;
       }
+      
 
-      & #logo-big {
-        height: 80vh;
-        object-fit: contain;
-        align-self: flex-end;
+      #welcome-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+        align-items: center;
+        width: 100%;
+
+        #one-percent {
+          border: .2rem white solid;
+          padding: 1rem;
+
+          .highlight {
+            color: var(--visa-red);
+          }
+          
+          .label {
+            color: var(--visa-green);
+          }
+        }
+
+        #logo-big {
+          max-height: 80vh;
+          min-width: 0;
+          object-fit: contain;
+        }
       }
     }
     
@@ -232,11 +253,6 @@ body {
     & p {
       align-self: normal;
     }
-
-    & #logo-big {
-      align-self: normal;
-      height: 100vw;
-    }
   }
 
   body .content #intro #intro-content {
@@ -273,6 +289,15 @@ body {
       & img {
         width: 100%;
       }
+    }
+  }
+
+  body .content #welcome #welcome-content {
+    flex-direction: column;
+    justify-content: center;
+
+    #logo-big {
+      max-height: 60vh;;
     }
   }
 }

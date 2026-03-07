@@ -161,8 +161,8 @@
           display: block;
           width: 100%;
 					background: rgba($color: black, $alpha: .8);
-          transform: translateY(-570px);
-          display: hidden;
+          transform: translateY(-610px);
+          visibility: hidden;
           transition-timing-function: cubic-bezier();
           transition-duration: .5s;
           z-index: 1;
@@ -180,6 +180,7 @@
           &.present {
             transform: translateY(0);
             display: block;
+            visibility: visible;
           }
         }
       }
