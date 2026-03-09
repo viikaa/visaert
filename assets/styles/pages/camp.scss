@@ -1,0 +1,11 @@
+a.camp-application {
+	color: var(--visa-red);
+
+	&:visited {
+		color: var(--visa-green);
+	}
+
+	&:hover {
+		opacity: .7;
+	}
+}
